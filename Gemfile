@@ -28,3 +28,5 @@ gem 'faker'
 gem 'devise'
 gem 'figaro'
 gem 'pundit'
+gem 'redcarpet'
+
