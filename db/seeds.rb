@@ -21,7 +21,7 @@ end
 topics = Topic.all
 
 # Create Posts
-50.times do
+150.times do
   Post.create!(
     user:  users.sample,
       topic: topics.sample,
