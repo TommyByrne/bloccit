@@ -24,7 +24,7 @@ topics = Topic.all
 150.times do
   Post.create!(
     user:  users.sample,
-      topic: topics.sample,
+    topic: topics.sample,
     title: Faker::Lorem.sentence,
     body:  Faker::Lorem.paragraph
     )
@@ -34,6 +34,7 @@ posts = Post.all
 # Create Comments
 100.times do
   Comment.create!(
+    user: users.sample,
     post: posts.sample,
     body: Faker::Lorem.paragraph
     )
