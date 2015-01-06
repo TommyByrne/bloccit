@@ -10,6 +10,8 @@ end
 group :development do
   gem 'sqlite3'
   gem 'spring'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 gem 'sass-rails', '~> 4.0.3'

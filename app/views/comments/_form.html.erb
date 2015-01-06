@@ -11,7 +11,7 @@
   <% end %>
   <%= form_group_tag(comment.errors[:body]) do %>
     <%= f.label :body %>
-    <%= f.text_area :body, rows: 2, class: 'form-control', placeholder: "Enter Comment" %>
+    <%= f.text_area :body, rows: 1, class: 'form-control', placeholder: "Enter Comment" %>
   <% end %>
   <div class="form-group">
     <%= f.submit "Add comment", class: 'btn btn-success' %>

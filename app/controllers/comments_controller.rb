@@ -8,13 +8,16 @@ def create
   @comment = current_user.comments.build(comment_params)
   @comment.post = @post
   @new_comment = Comment.new
-end
+  authorize @comment
 
   if @comment.save
     flash[:notice] = "Comment was Created Successfully."
+    redirect_to [@topic, @post]
   else
     flash[:error] = "There was an error saving the comment. Please try again."
+    redirect_to [@topic, @post]
   end
+end
 
 
 private
