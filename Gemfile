@@ -5,6 +5,7 @@ gem 'rails', '4.1.8'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'unicorn'
 end
 
 group :development do
@@ -12,6 +13,7 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'thin'
 end
 
 group :test do
