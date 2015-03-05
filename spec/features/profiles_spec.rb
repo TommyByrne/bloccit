@@ -2,8 +2,6 @@ require 'rails_helper'
 
 describe "Visiting profiles" do
 
-  include TestFactories
-
   before do
     @user = create(:user)
     @post = create(:post, user: @user)
